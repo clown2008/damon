@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.w{
+    width: 1280px;
+    margin: 0 auto;
+}
+.tle{
+    height: 102px;
+    background-color: black;
+}
+.tab{
+    height: 100%;
+    background-color: hotpink;
+    overflow: hidden;
+}
+.tab div{
+    width: 33.33%;
+    height: 100%;
+    background-color: skyblue;
+    float: left;
+    text-align: center;
+}
+.tab div:nth-child(1) p{
+    padding: 33px 0;
+    font-size: 25px;
+    font-family: "Microsoft YaHei";
+}
