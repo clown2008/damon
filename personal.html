@@ -5,59 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>小杰の博客</title>
+    <title>大梦の博客</title>
     <link rel="shortcut icon" href="favicon.png" />
-    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" id="pageloader-css"  href="./loading/css/pageloader.css" type="text/css" media="all" />
     <link rel="stylesheet" href="./css/index2.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/search-form.css">
 </head>
 <body style="background: gainsboro;">
-        <!-- 加载页面 -->
-       <!-- <div id="bonfire-pageloader">
-                <div class="bonfire-pageloader-icon">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-                    <path id="loading-12-icon" d="M291,82.219c0,16.568-13.432,30-30,30s-30-13.432-30-30s13.432-30,30-30S291,65.65,291,82.219z
-                         M261,404.781c-15.188,0-27.5,12.312-27.5,27.5s12.312,27.5,27.5,27.5s27.5-12.312,27.5-27.5S276.188,404.781,261,404.781z
-                         M361.504,113.167c-4.142,7.173-13.314,9.631-20.487,5.489c-7.173-4.141-9.631-13.313-5.49-20.487
-                        c4.142-7.173,13.314-9.631,20.488-5.489C363.188,96.821,365.645,105.994,361.504,113.167z M188.484,382.851
-                        c-14.348-8.284-32.697-3.368-40.98,10.98c-8.285,14.349-3.367,32.696,10.98,40.981c14.35,8.283,32.697,3.367,40.98-10.981
-                        C207.75,409.482,202.834,391.135,188.484,382.851z M421.33,184.888c-8.368,4.831-19.07,1.965-23.901-6.404
-                        c-4.832-8.368-1.965-19.07,6.404-23.902c8.368-4.831,19.069-1.964,23.9,6.405C432.566,169.354,429.699,180.056,421.33,184.888z
-                         M135.399,329.767c-8.285-14.35-26.633-19.266-40.982-10.982c-14.348,8.285-19.264,26.633-10.979,40.982
-                        c8.284,14.348,26.632,19.264,40.981,10.98C138.767,362.462,143.683,344.114,135.399,329.767z M436.031,277.249
-                        c-11.044,0-20-8.953-20-19.999c0-11.045,8.955-20.001,20.001-20.001c11.044,0,19.999,8.955,19.999,20.002
-                        C456.031,268.295,447.078,277.249,436.031,277.249z M115.97,257.251c-0.001-16.57-13.433-30.001-30.001-30.002
-                        c-16.568,0.001-29.999,13.432-30,30.002c0.001,16.566,13.433,29.998,30.001,30C102.538,287.249,115.969,273.817,115.97,257.251z
-                         M401.333,364.248c-10.759-6.212-14.446-19.97-8.234-30.73c6.212-10.759,19.971-14.446,30.731-8.233
-                        c10.759,6.211,14.445,19.971,8.232,30.73C425.852,366.774,412.094,370.46,401.333,364.248z M135.398,184.736
-                        c8.285-14.352,3.368-32.698-10.98-40.983c-14.349-8.283-32.695-3.367-40.981,10.982c-8.282,14.348-3.366,32.696,10.981,40.981
-                        C108.768,204,127.115,199.082,135.398,184.736z M326.869,421.328c-6.902-11.953-2.807-27.242,9.148-34.145
-                        s27.243-2.806,34.146,9.149c6.902,11.954,2.806,27.243-9.15,34.145C349.059,437.381,333.771,433.284,326.869,421.328z
-                         M188.482,131.649c14.352-8.286,19.266-26.633,10.982-40.982c-8.285-14.348-26.631-19.264-40.982-10.98
-                        c-14.346,8.285-19.264,26.633-10.98,40.982C155.787,135.017,174.137,139.932,188.482,131.649z"/>
-                    </svg>
-                    <h1>加载中......</h1>
-                </div>
-        </div> -->
+    <!-- 加载页面 -->
+    <div id="bonfire-pageloader">
+            <div class="bonfire-pageloader-icon">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                <path id="loading-12-icon" d="M291,82.219c0,16.568-13.432,30-30,30s-30-13.432-30-30s13.432-30,30-30S291,65.65,291,82.219z
+                     M261,404.781c-15.188,0-27.5,12.312-27.5,27.5s12.312,27.5,27.5,27.5s27.5-12.312,27.5-27.5S276.188,404.781,261,404.781z
+                     M361.504,113.167c-4.142,7.173-13.314,9.631-20.487,5.489c-7.173-4.141-9.631-13.313-5.49-20.487
+                    c4.142-7.173,13.314-9.631,20.488-5.489C363.188,96.821,365.645,105.994,361.504,113.167z M188.484,382.851
+                    c-14.348-8.284-32.697-3.368-40.98,10.98c-8.285,14.349-3.367,32.696,10.98,40.981c14.35,8.283,32.697,3.367,40.98-10.981
+                    C207.75,409.482,202.834,391.135,188.484,382.851z M421.33,184.888c-8.368,4.831-19.07,1.965-23.901-6.404
+                    c-4.832-8.368-1.965-19.07,6.404-23.902c8.368-4.831,19.069-1.964,23.9,6.405C432.566,169.354,429.699,180.056,421.33,184.888z
+                     M135.399,329.767c-8.285-14.35-26.633-19.266-40.982-10.982c-14.348,8.285-19.264,26.633-10.979,40.982
+                    c8.284,14.348,26.632,19.264,40.981,10.98C138.767,362.462,143.683,344.114,135.399,329.767z M436.031,277.249
+                    c-11.044,0-20-8.953-20-19.999c0-11.045,8.955-20.001,20.001-20.001c11.044,0,19.999,8.955,19.999,20.002
+                    C456.031,268.295,447.078,277.249,436.031,277.249z M115.97,257.251c-0.001-16.57-13.433-30.001-30.001-30.002
+                    c-16.568,0.001-29.999,13.432-30,30.002c0.001,16.566,13.433,29.998,30.001,30C102.538,287.249,115.969,273.817,115.97,257.251z
+                     M401.333,364.248c-10.759-6.212-14.446-19.97-8.234-30.73c6.212-10.759,19.971-14.446,30.731-8.233
+                    c10.759,6.211,14.445,19.971,8.232,30.73C425.852,366.774,412.094,370.46,401.333,364.248z M135.398,184.736
+                    c8.285-14.352,3.368-32.698-10.98-40.983c-14.349-8.283-32.695-3.367-40.981,10.982c-8.282,14.348-3.366,32.696,10.981,40.981
+                    C108.768,204,127.115,199.082,135.398,184.736z M326.869,421.328c-6.902-11.953-2.807-27.242,9.148-34.145
+                    s27.243-2.806,34.146,9.149c6.902,11.954,2.806,27.243-9.15,34.145C349.059,437.381,333.771,433.284,326.869,421.328z
+                     M188.482,131.649c14.352-8.286,19.266-26.633,10.982-40.982c-8.285-14.348-26.631-19.264-40.982-10.98
+                    c-14.346,8.285-19.264,26.633-10.98,40.982C155.787,135.017,174.137,139.932,188.482,131.649z"/>
+                </svg>
+                <h1 style="color: #fff;font-size:16px;">加载中......</h1>
+            </div>
+    </div>
+    <!-- 加载页面 -->
 
-
-        <!-- 主体页面 -->
-        <div class="tle">
-            <div class="tab w">
-                <div>
-                    <p>关注我：1010935092</p>
-                </div>
-                <div>
-                    
-                </div>
-                <div>
-
-                </div>
+    <!-- 主体页面 -->
+    <div class="tle" id="tle">
+        <div  class="tab w">
+            <div>
+                <p>关注我：1010935092</p>
+            </div>
+            <div>
+                <a href="./index2.html"><img src="./image/2.png"></a>
+            </div>
+            <div class="Drop-Down">
+                <p class="disappear" style="display:inline-block;">菜单</p>
+                <img class="img-1 disappear" style="display:inline-block;cursor:pointer;" src="./image/menu-align-white.png" alt="">
+                <img class="img-2" style="cursor:pointer;overflow: hidden;opacity: 0;" src="./image/menu-close-white.png">
             </div>
         </div>
-    <!-- 加载页面 -->
-    <div><h1>404</h1></div>
+        <div class="tab-2">
+            <div class="w">
+                <ul class="ul">
+                    <li><a href="./index.html">关于我</a></li>
+                    <li><a href="./index2.html">主页</a></li>
+                    <li><a href="https://leanote.zzzmh.cn/">技术笔记</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="jq22-container">
+        <div id="wrapper">
+            <div id="slider-wrap">
+                    <ul id="slider">
+                        <li>                
+                            <img src="./image/00.jpg">
+                        </li>
+                         
+                        <li>
+                            <img src="./image/01.jpg">
+                        </li>
+                         
+                        <li>
+                            <img src="./image/02.jpg">
+                        </li>
+                    </ul>
+                    <div class="btns" id="next">><i class="fa fa-arrow-right"></i></div>
+                    <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
+                    <div id="pagination-wrap">
+                    </div>        
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%;height:592px;z-index: -3;">
+
+    </div>
+    <div class="container-father">
+        <section class="container">
+            <form onsubmit="submitFn(this, event);">
+                <div class="search-wrapper">
+                    <div class="input-holder">
+                        <input type="text" class="search-input" placeholder="点击这里，填写关键字" />
+                        <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                    </div>
+                    <span class="close" onclick="searchToggle(this, event);"></span>
+                    <div class="result-container">
+    
+                    </div>
+                </div>
+            </form>
+        </section>
+        <footer class="footer">
+            
+        </footer>
+    </div>   
 </body>
 <!-- 加载页面js -->
 <script src="./loading/js/jquery-1.10.2.js"></script>
@@ -76,7 +131,7 @@
 
 
     <!-- 血小板组件 -->
-<script src="js/live2d.js"></script>
+<!-- <script src="js/live2d.js"></script>
 <script type="text/javascript">
 
     let xuexiaoban = document.createElement('div');
@@ -120,5 +175,68 @@
             return "什么破网络啊~我要自闭啦！";
         }
     }
+</script> -->
+<script src="./js/jq-color/jquery.animate-colors-min.js"></script>
+<script src="./js/jq-color//jquery.animate-colors.js"></script>
+<script>
+    $(".img-1").click(function(){
+        // $(".tle").animate({
+        //     opactiy:'1',
+        // });
+        $(".tle").animate({backgroundColor: "rgba(0,0,0,1)"});
+        $(".disappear").css("opacity","0");
+        $(".img-2").css("opacity","1");
+        $(".tab-2").animate({
+            height:"102px",
+            backgroundColor: "rgba(0,0,0,1)"
+        });
+        $(".ul>li").css("display","block");
+    });
+    $(".img-2").click(function(){
+        $(".tle").animate({backgroundColor: "rgba(0,0,0,0)"});
+        $(".disappear").css("opacity","1");
+        $(".img-2").css("opacity","0");
+        $(".tab-2").animate({
+            height:"0px",
+            backgroundColor: "rgba(0,0,0,0)"
+        });
+        $(".ul>li").css("display","none");
+    })
 </script>
+<script type="text/javascript" src="./js//slider.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+	<script type="text/javascript">
+        function searchToggle(obj, evt){
+            var container = $(obj).closest('.search-wrapper');
+
+            if(!container.hasClass('active')){
+                  container.addClass('active');
+                  evt.preventDefault();
+            }
+            else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+                  container.removeClass('active');
+                  // clear input
+                  container.find('.search-input').val('');
+                  // clear and hide result container when we press close
+                  container.find('.result-container').fadeOut(100, function(){$(this).empty();});
+            }
+        }
+
+        function submitFn(obj, evt){
+            value = $(obj).find('.search-input').val().trim();
+
+            _html = "你看看你搜索的都是什么:  ";
+            if(!value.length){
+                _html = "你还没有关键字哦，这样没办法搜索哦";
+            }
+            else{
+                _html += "<b>" + value + "</b>";
+            }
+
+            $(obj).find('.result-container').html('<span>' + _html + '</span>');
+            $(obj).find('.result-container').fadeIn(100);
+
+            evt.preventDefault();
+        }
+    </script>
 </html>
